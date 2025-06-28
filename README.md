@@ -32,7 +32,7 @@ Folder Structure
 ├── script.js
 ├── sounds/
 │   ├── finish.mp3
-│   └── lofi.mp3
+│   └── music.mp3
 How to Use
 Enter your desired focus time, short break, and long break durations.
 
@@ -53,4 +53,9 @@ Korupolu Siri
 
 License
 This project is open for personal use, learning, and academic purposes.
+
+![Image](https://github.com/user-attachments/assets/e7ad3732-3b71-46b7-a247-3d88653c5800)
+![Image](https://github.com/user-attachments/assets/6c750f2f-482e-4814-b7ee-fad8afd120a6)
+![Image](https://github.com/user-attachments/assets/3c4d1d33-07fe-48fc-9e0a-db564de5b4bc)
+![Image](https://github.com/user-attachments/assets/60e9c384-c48a-4f71-b357-e9876643b527)
 
