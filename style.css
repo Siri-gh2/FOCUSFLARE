@@ -1,0 +1,206 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Header */
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Quote */
+.quote {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Inputs */
+.inputs {
+    margin-bottom: 15px;
+}
+
+.inputs label {
+    display: block;
+    margin: 5px 0 2px;
+    color: #444;
+}
+
+.inputs input {
+    width: 80px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* Timer */
+.timer {
+    font-size: 80px;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Buttons */
+.buttons button,
+.toggle-container button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    color: white;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.buttons button:hover,
+.toggle-container button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #fbc2eb, #a18cd1);
+    color: #333;
+}
+
+/* Counter */
+.counter {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #444;
+}
+
+/* Toggle Buttons */
+.toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+    color: #a18cd1;
+}
+
+.modal-content p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #333;
+}
+
+/* Dark Mode */
+body.dark {
+    background: linear-gradient(135deg, #232526, #414345);
+}
+
+body.dark .container {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+}
+
+body.dark h1,
+body.dark .quote,
+body.dark .counter,
+body.dark label,
+body.dark .modal-content,
+body.dark .modal-content h2,
+body.dark .modal-content p,
+body.dark #minutes,
+body.dark #seconds {
+    color: white;
+}
+
+body.dark .modal-content {
+    background-color: #333;
+}
+
+body.dark input {
+    background-color: #555;
+    color: white;
+    border: 1px solid #777;
+}
+
+body.dark button {
+    background: linear-gradient(to right, #333, #555);
+    color: white;
+}
+
+body.dark button:hover {
+    background: linear-gradient(to right, #555, #777);
+    color: #fbc2eb;
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+body {
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}

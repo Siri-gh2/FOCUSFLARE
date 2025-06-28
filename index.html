@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusFlare 🔥</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="toggle-container">
+    <button id="darkModeToggle">🌙</button>
+    <button id="infoBtn">ℹ️ Info</button>
+    <button id="musicToggle">🎶</button>
+  </div>
+
+  <div class="container">
+    <h1>FocusFlare🔥</h1>
+
+    <div class="quote" id="quote"></div>
+
+    <div class="inputs">
+      <label>Focus Time (mins):</label>
+      <input type="number" id="focusInput" value="25" min="1">
+      <label>Short Break (mins):</label>
+      <input type="number" id="shortBreakInput" value="5" min="1">
+      <label>Long Break (mins):</label>
+      <input type="number" id="longBreakInput" value="15" min="1">
+    </div>
+
+    <div class="timer">
+      <span id="minutes">25</span>:<span id="seconds">00</span>
+    </div>
+
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <div class="counter">
+      🍅 Pomodoros Completed: <span id="pomodoroCount">0</span><br>
+      📅 Today’s Sessions: <span id="todayCount">0</span>
+    </div>
+  </div>
+
+  <!-- Info Modal -->
+  <div id="infoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>About FocusFlare 🔥</h2>
+      <p><strong>What is FocusFlare?</strong><br>
+      A productivity timer that helps you stay focused and take intentional breaks with a sprinkle of vibes and cuteness.</p>
+
+      <p><strong>What is Pomodoro?</strong><br>
+      A Pomodoro is one focus session (traditionally 25 mins) followed by a short break (5 mins). After 4, take a long break. BUT — with FocusFlare, YOU choose the times!</p>
+
+      <p><strong>How to Use:</strong><br>
+      1. Set your focus and break durations.<br>
+      2. Click Start to begin.<br>
+      3. Pomodoro count increases when focus finishes.<br>
+      4. Enjoy breaks. Stay fresh. Stay slaying! 💖</p>
+    </div>
+  </div>
+
+  <audio id="finishSound" src="sounds/finish.mp3"></audio>
+  <audio id="lofiMusic" src="sounds/music.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
